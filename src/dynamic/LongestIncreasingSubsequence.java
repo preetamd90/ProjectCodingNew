@@ -4,8 +4,12 @@ import java.util.ArrayList;
 
 public class LongestIncreasingSubsequence {
 
-    //Use the driver class to test.
 
+    // calArray[i] means longestIncreasingSubsequence ending with inputArray[i].
+    // For every i in input array, we consider all elements from 0 to i-1 and
+    // consider if ith element is greater than jth element, then the list should contain ith element.
+    // else calArray[i] should be updated with calArray[j] provided callArray[j] is higher.
+    // updates should be replace_max operation basically.
     public void getLongestIncreasingSubsequence(final int[] inputArray) {
 
         // calArray[i] means longestIncreasingSubsequence ending with inputArray[i].
